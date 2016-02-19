@@ -7,10 +7,45 @@
 .slide {
 	display: none;
 	position: absolute;
-	height: 100%;
-	height: 500px;
 }
 
 .active-slide {
 	display: block;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.arrow-prev {
+	margin-right: 45px;
+	display: inline-block;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.dot, .arrow-prev, .arrow-next {
+  cursor: pointer;
+}
+
+.slider-dots li {
+  color: #bbbbbb;
+  display: inline;
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #333333;
 }
