@@ -1,21 +1,25 @@
+/* Set the position, height and width of the slider */
 .slider {
 	position: relative;
 	width: 100%;
 	height: 500px;
 }
 
+/* Hide the slide images */
 .slide {
 	display: none;
 	position: absolute;
 }
 
+/* Display the active slide */
 .active-slide {
 	display: block;
 }
 
+/* Navigation buttons for the slider */
 .slider-nav {
-  text-align: center;
-  margin-top: -20px;
+	text-align: center;
+	margin-top: -20px;
 }
 
 .arrow-prev {
@@ -24,28 +28,28 @@
 }
 
 .arrow-next {
-  margin-left: 45px;
-  display: inline-block;
+	margin-left: 45px;
+	display: inline-block;
 }
 
 .slider-dots {
-  list-style: none;
-  display: inline-block;
-  padding-left: 0;
-  margin-bottom: 0;
+	list-style: none;
+	display: inline-block;
+	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .dot, .arrow-prev, .arrow-next {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .slider-dots li {
-  color: #bbbbbb;
-  display: inline;
-  font-size: 40px;
-  margin-right: 5px;
+	color: #bbbbbb;
+	display: inline;
+	font-size: 40px;
+	margin-right: 5px;
 }
 
 .slider-dots li.active-dot {
-  color: #333333;
+	color: #333333;
 }

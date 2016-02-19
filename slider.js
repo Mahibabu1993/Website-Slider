@@ -1,8 +1,11 @@
+/* Start of main function */
 var main = function() {
+	/* Change slide images every 3 seconds */
 	var int = self.setInterval(function() {
 		$('.arrow-next').trigger('click');
 	}, 3000);
   
+	/* Stop sliding while hovering to the slider */
 	$(".slide, .dot, .arrow-next, .arrow-prev").hover(function() {
 		clearInterval(int);
 	}, function () {
@@ -11,6 +14,7 @@ var main = function() {
 		}, 3000);
 	});
 	
+	/* Change slide image when clicking the dot */
 	$('.dot').click(function() {
 		var index = $('.dot').index(this) + 1;
 	
@@ -28,6 +32,7 @@ var main = function() {
 	});
 
   
+	/* Goto next slide while clicking next button */
 	$('.arrow-next').click(function() {
 		var currentSlide = $('.active-slide');
 		var nextSlide = currentSlide.next();
@@ -48,6 +53,7 @@ var main = function() {
 	});
 
 
+	/* Goto previous slide while clicking previous button */
 	$('.arrow-prev').click(function() {
 		var currentSlide = $('.active-slide');
 		var prevSlide = currentSlide.prev();
@@ -69,4 +75,5 @@ var main = function() {
 
 }
 
+/* Call main function when the document is ready */
 $(document).ready(main);
